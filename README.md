@@ -29,7 +29,8 @@ The return array is [1, 1] with Alice's score first and Bob's second.
 
 <h3>Solution</h3>
 
-```function compareTriplets(a, b) {
+```javascript
+function compareTriplets(a, b) {
   let alice = 0,
     bob = 0;
   for (let i = 0; i < a.length; i++) {
