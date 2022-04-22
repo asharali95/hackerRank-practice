@@ -65,3 +65,27 @@ function compareTriplets(a, b) {
 //   let diagDiff = left - right;
 //   return diagDiff < 0 ? (diagDiff = diagDiff * -1) : diagDiff;
 // }
+
+// ----------------------------------------------------------
+// QUESTION 03 - Staircase
+// Staircase detail
+
+// This is a staircase of size n = 4 :
+//    #
+//   ##
+//  ###
+// ####
+
+// function staircase(n) {
+//   let stair = "";
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = i; j < n; j++) {
+//       stair += " ";
+//     }
+//     for (let k = 1; k <= i; k++) {
+//       stair += "#";
+//     }
+//     stair += "\n";
+//   }
+//   console.log(stair);
+// }

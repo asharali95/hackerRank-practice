@@ -75,3 +75,36 @@ function diagonalDifference(arr) {
   return diagDiff < 0 ? (diagDiff = diagDiff * -1) : diagDiff;
 }
 ```
+
+<h2>QUESTION 03 - Staircase</h2>
+<p>
+Staircase detail
+
+This is a staircase of size n = 4 :
+
+```
+   #
+  ##
+ ###
+####
+```
+
+</p>
+
+<h3>Solution</h3>
+
+```javascript
+function staircase(n) {
+  let stair = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = i; j < n; j++) {
+      stair += " ";
+    }
+    for (let k = 1; k <= i; k++) {
+      stair += "#";
+    }
+    stair += "\n";
+  }
+  console.log(stair);
+}
+```
