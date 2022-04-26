@@ -108,3 +108,36 @@ function staircase(n) {
   console.log(stair);
 }
 ```
+
+<h2>QUESTION 04 - MinMax Sums </h2>
+<p>
+Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+Example:
+arr = [1,3,5,7,9]
+The minimum sum is 1+3+5+7 = 16 and the maximum sum is 3+5+7+9 = 24
+the function prints
+
+```javascript
+16 24
+```
+
+</p>
+
+<h3>Solution</h3>
+
+```javascript
+function miniMaxSum(arr) {
+  let allSums = [];
+  for (let i = 0; i < arr.length; i++) {
+    let temp = arr[i];
+    let sum = 0;
+    for (let j = 0; j < arr.length; j++) {
+      if (temp === arr[j] && j === i) continue;
+      sum += arr[j];
+    }
+    allSums.push(sum);
+  }
+  console.log(Math.min(...allSums) + " " + Math.max(...allSums));
+}
+```
